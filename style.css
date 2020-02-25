@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  font-family: sans-serif;
+  background-color: rgb(245, 226, 201);
+}
+
+.intro {
+  height: 10vh;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.interactiveButtons {
+  height: 10vh;
+  width: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+.container {
+  height: 60vh;
+  width: 60vh;  
+  background-color: white;
+
+  display: grid;
+  grid-gap: 0em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr); 
+  margin: 0 auto;
+}
+
+.grid-item {
+  padding: 0em;
+  border: 1px solid #ddd;
+  text-align: center;
+  margin: 0px;
+}
+
+.buttonClearSketch {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(235, 91, 8);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
